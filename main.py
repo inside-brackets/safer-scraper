@@ -1,4 +1,5 @@
 from selenium import webdriver
+from create_files_for_scraper import create_files_for_scraper
 from scrape import *
 import pandas as pd
 
@@ -159,6 +160,7 @@ def get_logs():
 
 
 if __name__ == '__main__':
+    create_files_for_scraper();
     get_logs()
     start_mc_menu()
     print("\n\nAt the end of the road buddy.")
